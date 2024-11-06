@@ -24,7 +24,6 @@ function Home() {
   return (
     <>
       <CarouselEle showNavPop={location.state?.showNavPop} />
-
       <Featured />
       <ProductIntro />
       <CounterPage />

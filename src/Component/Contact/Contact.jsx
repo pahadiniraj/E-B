@@ -4,7 +4,6 @@ import ContactBody from "./ContactBody/ContactBody";
 function Contact() {
   return (
     <>
-      <BreadCrums />
       <ContactBody />
     </>
   );

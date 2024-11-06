@@ -67,14 +67,6 @@ function PostNav() {
             <Navigation />
           </div>
           <div className=" flex  gap-4 ">
-            <NavLink
-              to="wishlist"
-              className={({ isActive }) => (isActive ? "text-blue-500" : "")}
-            >
-              <FavoriteBorderRoundedIcon>
-                <Wishlist />
-              </FavoriteBorderRoundedIcon>
-            </NavLink>
             <div className="relative">
               <div className="absolute left-4 bottom-4 bg-green-500 h-4 w-4   opacity-80 rounded-full text-white flex justify-center items-center text-xxs  ">
                 {totalQuantity}
@@ -88,14 +80,6 @@ function PostNav() {
                 </ShoppingCartOutlinedIcon>
               </NavLink>
             </div>
-            <NavLink
-              to="profile"
-              className={({ isActive }) => (isActive ? "text-blue-500" : "")}
-            >
-              <AccountCircleOutlinedIcon>
-                <Profile />
-              </AccountCircleOutlinedIcon>
-            </NavLink>
           </div>
         </div>
       </nav>
