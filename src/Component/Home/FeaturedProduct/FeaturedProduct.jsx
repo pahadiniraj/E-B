@@ -7,7 +7,6 @@ import Cards from "../../Cards/Cards";
 const FeaturedProduct = () => {
   const allItems = useSelector((state) => state.allCart.items);
   const featuredItems = allItems.filter((item) => item.featured === true);
-  console.log(featuredItems);
   const dispatch = useDispatch();
 
   return (

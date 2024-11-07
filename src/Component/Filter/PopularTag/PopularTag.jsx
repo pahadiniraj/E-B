@@ -82,7 +82,7 @@ const PopularTag = ({ handleTag }) => {
           onClick={handleTagClick}
           className="flex w-full justify-between"
         >
-          <div className="text-xs md:text-base font-medium">Show Tag</div>
+          <div className="text-xs md:text-base font-medium">Tags</div>
           <div className="text-xs">
             {showTag ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </div>

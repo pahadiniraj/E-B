@@ -75,6 +75,7 @@ function Shop() {
 
   const handleCatagories = (value) => {
     setCategories(value);
+    
   };
 
   const handleRating = (value) => {

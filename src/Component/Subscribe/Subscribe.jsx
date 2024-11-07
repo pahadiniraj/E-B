@@ -13,14 +13,14 @@ const Subscribe = ({ onClose }) => {
 
   return (
     <div
-      className="fixed  inset-0 bg-black bg-opacity-30 backdrop-blur-sm justify-center flex items-center"
+      className="fixed  inset-0 bg-black bg-opacity-30 backdrop-blur-sm justify-center flex items-center p-5 md:p-0"
       ref={subRef}
       onClick={closeSub}
     >
       <div>
-        <div className="h-[300px] w-[700px] bg-white p-2  rounded-md flex gap-4 relative">
+        <div className="md:h-[300px] md:w-[700px]  bg-white md:p-2  rounded-md flex gap-4 relative">
           <div
-            className=" bg-cover w-2/5 h-full bg-top rounded-sm"
+            className=" bg-cover md:w-2/5 md:h-full bg-top rounded-sm"
             style={{ backgroundImage: `url(${img1})` }}
           ></div>
           <div className="text-center flex justify-center py-12">
@@ -43,7 +43,7 @@ const Subscribe = ({ onClose }) => {
                   Subscribe
                 </button>
               </div>
-              <div className="flex justify-center items-center  mt-4 gap-1 ">
+              <div className="flex justify-center items-center  mt-4 md:mt-0 gap-1 ">
                 <input type="checkbox" />
                 <p className="text-xs">Do not show this window</p>
               </div>

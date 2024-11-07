@@ -11,8 +11,11 @@ const Price = ({ handleSelectedPrice }) => {
   };
 
   return (
-    <div className="border-b border-slate-200 py-3">
-      <button onClick={handlePrice} className=" flex w-full justify-between">
+    <div className="md:border-b border-slate-200 py-3">
+      <button
+        onClick={handlePrice}
+        className=" flex w-full justify-between items-center gap-2"
+      >
         <div className="text-medium font-medium text-xs md:text-base">
           Price
         </div>

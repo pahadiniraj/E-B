@@ -42,25 +42,23 @@ const AllCatagories = ({ handleCatagories }) => {
   };
 
   return (
-    <div className="border-b border-slate-200 py-3 ">
+    <div className="md:border-b  border-slate-200 py-3  ">
       <div className="">
         <button
-          className="w-full text-left flex items-center justify-between "
+          className="w-full text-left flex items-center justify-between gap-2 "
           onClick={handleCatagoriesClick}
         >
-          <div className="text-xs font-medium md:text-base ">
-            All Catagories
-          </div>
+          <div className="text-xs font-medium md:text-base ">Catagories</div>
           <div className="text-xs md:text-lg">
             {showList ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </div>
         </button>
       </div>
       {showList && (
-        <div className="py-2 ">
+        <div className="py-2 fixed  inset-0 bg-black bg-opacity-30 backdrop-blur-sm md:justify-center md:flex md:items-center flex flex-col justify-center items-center  z-10  p-2 border-slate-500 ">
           {list.map((val, idx) => (
             <div
-              className="py-1 text-xs md:text-sm flex items-center"
+              className="py-1 text-xs md:text-sm flex items-center  bg-white px-4 w-full "
               key={idx}
             >
               <input

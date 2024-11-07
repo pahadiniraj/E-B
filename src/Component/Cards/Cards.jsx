@@ -46,8 +46,6 @@ const Cards = ({
     setShowPopup(!showPopup);
   };
 
-  console.log("hello menu", menu);
-
   return (
     <div className="">
       <div

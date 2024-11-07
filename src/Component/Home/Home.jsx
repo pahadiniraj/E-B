@@ -18,9 +18,13 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSub(true);
+      console.log("hello niraj");
+      document.cookie = "userStatus=active; max-age=3600; path=/";
     }, 2000);
+
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <>
       <CarouselEle showNavPop={location.state?.showNavPop} />

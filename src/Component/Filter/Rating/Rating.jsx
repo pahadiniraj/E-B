@@ -39,11 +39,11 @@ const Rating = ({ handleRating }) => {
   };
 
   return (
-    <div className="border-b border-slate-200 py-3 ">
+    <div className="md:border-b border-slate-200 py-3 ">
       <div>
         <button
           onClick={handleRatingClick}
-          className="flex w-full justify-between "
+          className="flex w-full justify-between gap-2 items-center"
         >
           <div className="text-medium font-medium text-xs md:text-base">
             Rating{" "}
@@ -53,7 +53,7 @@ const Rating = ({ handleRating }) => {
           </div>
         </button>
         {showRating && (
-          <div className="">
+          <div className=" absolute">
             {listStar.map((value, index) => (
               <div
                 className="flex justify-start items-center gap-2 py-2"
