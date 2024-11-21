@@ -17,8 +17,8 @@ const UnderFilter = ({
   return (
     <div className="w-full">
       <div className="">
-        <div className="w-full flex flex-col xxxs:gap-5">
-          <div className="md:w-3/6 w-full mt-4   flex justify-center items-center gap-5   ">
+        <div className="w-full flex flex-col md:flex-row  xxxs:gap-5">
+          <div className="md:w-2/6 w-full mt-4 flex-col   flex  gap-5   ">
             <AllCatagories handleCatagories={handleCatagories} />
             <Rating handleRating={handleRating} />
             <Price handleSelectedPrice={handleSelectedPrice} />
@@ -26,7 +26,7 @@ const UnderFilter = ({
             <FilterDiscount />
             <SaleProduct />
           </div>
-          <div className="w-full ">
+          <div className="w-full md:w-4/6">
             <MainProducts productList={productList} />
           </div>
         </div>

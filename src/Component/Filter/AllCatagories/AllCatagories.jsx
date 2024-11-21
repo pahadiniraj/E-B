@@ -55,10 +55,10 @@ const AllCatagories = ({ handleCatagories }) => {
         </button>
       </div>
       {showList && (
-        <div className="py-2 fixed  inset-0 bg-black bg-opacity-30 backdrop-blur-sm md:justify-center md:flex md:items-center flex flex-col justify-center items-center  z-10  p-2 border-slate-500 ">
+        <div className="py-2 md:justify-start md:flex md:items-start flex flex-col justify-center items-center  z-10  p-2 border-slate-500  ">
           {list.map((val, idx) => (
             <div
-              className="py-1 text-xs md:text-sm flex items-center  bg-white px-4 w-full "
+              className="py-1 text-xs md:text-sm flex items-center justify-center  px-4  "
               key={idx}
             >
               <input
@@ -66,10 +66,11 @@ const AllCatagories = ({ handleCatagories }) => {
                 id={idx}
                 name="catagories"
                 value={val.category}
-                className="mr-1 "
+                className="mr-1  "
                 onChange={(event) => {
                   handleCatagories(event.target.value);
                 }}
+                onClick={handleCatagoriesClick}
               />
               <label htmlFor={idx}>{val.name}</label>
             </div>
